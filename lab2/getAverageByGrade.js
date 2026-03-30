@@ -2,13 +2,16 @@ export function getAverageByGrade(students) {
     const result = {};
 
     for (let student of students) {
-        const grade = student.grade;
+        let grade = student.grade;
+
+        if (!grade) {
+            if (student.score >= 90) grade = "A";
+            else if (student.score >= 75) grade = "B";
+            else grade = "C";
+        }
 
         if (!result[grade]) {
-            result[grade] = {
-                total: 0,
-                count: 0
-            };
+            result[grade] = { total: 0, count: 0 };
         }
 
         result[grade].total += student.score;

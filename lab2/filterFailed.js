@@ -1,11 +1,11 @@
-function filterFailed(data, passScore) {
-    let failedStudents = [];
+export function filterFailed(data, passScore) {
+    let failed = [];
 
-    for (const student of data) {
+    for (let student of data) {
         if (student.score < passScore) {
-            failedStudents.push(student.name);
+            failed.push(student.name);
         }
     }
 
-    return failedStudents;
+    return failed;
 }
