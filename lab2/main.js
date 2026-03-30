@@ -17,7 +17,7 @@ const grades = [
     { name: "Студент_X", score: 45 }
 ];
 
-// Итоговый вывод (собирает Макар)
+// Итоговый вывод
 
 console.log("Средний балл:", calculateAverage(grades)); // Денис
 console.log("Лучший студент:", findTopStudent(grades)); // Сережа
