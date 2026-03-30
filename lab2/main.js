@@ -1,15 +1,14 @@
-import { calculateAverage } from "./functions/calculateAverage.js";
-import { findTopStudent } from "./functions/findTopStudent.js";
-import { filterFailed } from "./functions/filterFailed.js";
-import { addLetterGrade } from "./functions/addLetterGrade.js";
-import { getTotalScore } from "./functions/getTotalScore.js";
-import { countPassed } from "./functions/countPassed.js";
-import { getStudentNames } from "./functions/getStudentNames.js";
-import { sortByScore } from "./functions/sortByScore.js";
-import { findByName } from "./functions/findByName.js";
-import { getAverageByGrade } from "./functions/getAverageByGrade.js";
+import { calculateAverage } from "./calculateAverage.js";
+import { findTopStudent } from "./findTopStudent.js";
+import { filterFailed } from "./filterFailed.js";
+import { addLetterGrade } from "./addLetterGrade.js";
+import { getTotalScore } from "./getTotalScore.js";
+import { countPassed } from "./countPassed.js";
+import { getStudentNames } from "./getStudentNames.js";
+import { sortByScore } from "./sortByScore.js";
+import { findByName } from "./findByName.js";
+import { getAverageByGrade } from "./getAverageByGrade.js";
 
-// Общие данные (не менять)
 const grades = [
     { name: "Макар", score: 85 },
     { name: "Денис", score: 92 },
@@ -17,8 +16,6 @@ const grades = [
     { name: "Даша", score: 88 },
     { name: "Студент_X", score: 45 }
 ];
-
-// Итоговый вывод
 
 console.log("Средний балл:", calculateAverage(grades)); // Денис
 console.log("Лучший студент:", findTopStudent(grades)); // Сережа
