@@ -24,8 +24,3 @@ function addLetterGrade(data) {
 }
 
 const gradesWithLetters = addLetterGrade(grades);
-
-console.log("Анализ успеваемости:");
-gradesWithLetters.forEach(student => {
-    console.log(`${student.name}: ${student.score} баллов — ${student.letter}`);
-});
