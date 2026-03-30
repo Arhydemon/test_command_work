@@ -7,6 +7,7 @@ import { countPassed } from "./functions/countPassed.js";
 import { getStudentNames } from "./functions/getStudentNames.js";
 import { sortByScore } from "./functions/sortByScore.js";
 import { findByName } from "./functions/findByName.js";
+import { getAverageByGrade } from "./functions/getAverageByGrade.js";
 
 // Общие данные (не менять)
 const grades = [
@@ -28,3 +29,4 @@ console.log("Сдавшие:", countPassed(grades, 60)); // Костя
 console.log("Имена:", getStudentNames(grades)); // Дима В
 console.log("Сортировка:", sortByScore(grades)); // Артур
 console.log("Поиск:", findByName(grades, "Макар")); // Денис Г
+console.log("Средний балл по оценкам:", getAverageByGrade(addLetterGrade(grades))); // Дима Кудинов
