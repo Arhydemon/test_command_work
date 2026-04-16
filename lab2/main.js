@@ -3,7 +3,7 @@ import { findTopStudent } from "./findTopStudent.js";
 import { filterFailed } from "./filterFailed.js"; // готово
 import { addLetterGrade } from "./addLetterGrade.js";
 import { getTotalScore } from "./getTotalScore.js";
-import { countPassed } from "./countPassed.js";
+import { countPassed } from "./countPassed.js"; // готово
 import { getStudentNames } from "./getStudentNames.js"; // готово
 import { sortByScore } from "./sortByScore.js";
 import { findByName } from "./findByName.js";
