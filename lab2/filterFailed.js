@@ -7,5 +7,6 @@ export function filterFailed(data, passScore) {
         }
     }
 
+    
     return failed;
 }
